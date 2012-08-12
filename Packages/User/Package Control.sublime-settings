@@ -4,12 +4,15 @@
 	[
 		"BracketHighlighter",
 		"Git",
+		"Haml",
 		"Jasmine",
 		"Package Control",
 		"RSpec",
 		"RspecBuild",
+		"Sass",
 		"SendToPasteBin",
 		"sublime-jslint",
+		"SyncedSideBar",
 		"Theme - Soda",
 		"Unicode Character Highlighter"
 	]
