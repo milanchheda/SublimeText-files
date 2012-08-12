@@ -1,0 +1,16 @@
+{
+	"auto_upgrade_last_run": 1344766912,
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"Git",
+		"Jasmine",
+		"Package Control",
+		"RSpec",
+		"RspecBuild",
+		"SendToPasteBin",
+		"sublime-jslint",
+		"Theme - Soda",
+		"Unicode Character Highlighter"
+	]
+}
