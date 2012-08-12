@@ -3,10 +3,10 @@
 	[
 		"/Users/phillip/Projekte/torial/git"
 	],
-	"last_window_id": 8,
+	"last_window_id": 9,
 	"settings":
 	{
-		"new_window_height": 773.0,
+		"new_window_height": 856.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -22,15 +22,35 @@
 			"build_system": "Packages/RspecBuild/RSpec.sublime-build",
 			"command_palette":
 			{
-				"height": 115.0,
+				"height": 159.0,
 				"selected_items":
 				[
 					[
-						"packagein",
-						"Package Control: Install Package"
+						"show",
+						"Snippet: spy on and throw"
+					],
+					[
+						"lint",
+						"JSLint: Run JSLint"
 					],
 					[
 						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"jas",
+						"Jasmine: Switch between code and spec"
+					],
+					[
+						"jasm",
+						"Jasmine: Switch between code and spec"
+					],
+					[
+						"packa",
+						"Package Control: Install Package"
+					],
+					[
+						"packagein",
 						"Package Control: Install Package"
 					],
 					[
@@ -42,7 +62,7 @@
 						"Indentation: Reindent Lines"
 					]
 				],
-				"width": 516.0
+				"width": 480.0
 			},
 			"console":
 			{
@@ -59,6 +79,9 @@
 			},
 			"file_history":
 			[
+				"/Users/phillip/Projekte/torial/git/app/assets/javascripts/project_contents_filter.js",
+				"/Users/phillip/Projekte/torial/git/spec/javascripts/project_contents_filter_spec.js",
+				"/Users/phillip/Projekte/torial/git/spec/javascripts/spec.js.coffee",
 				"/Users/phillip/Projekte/torial/git/spec/requests/content/create_spec.rb",
 				"/Users/phillip/Projekte/torial/git/spec/javascripts/support/jasmine.yml",
 				"/Users/phillip/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
@@ -123,7 +146,7 @@
 			},
 			"input":
 			{
-				"height": 0.0
+				"height": 36.0
 			},
 			"layout":
 			{
@@ -152,6 +175,10 @@
 			{
 				"height": 112.0
 			},
+			"output.jslint_result_view":
+			{
+				"height": 120.0
+			},
 			"replace":
 			{
 				"height": 0.0
@@ -162,6 +189,14 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"specjs",
+						"spec/javascripts/spec.js.coffee"
+					],
+					[
+						"filter",
+						"app/assets/javascripts/project_contents_filter.js"
+					],
 					[
 						"jasmine",
 						"spec/javascripts/support/jasmine.yml"
@@ -241,10 +276,10 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 156.0,
+			"side_bar_width": 275.0,
 			"status_bar_visible": true
 		},
-		"new_window_width": 1025.0
+		"new_window_width": 1436.0
 	},
 	"windows":
 	[
@@ -537,6 +572,335 @@
 			"side_bar_width": 275.0,
 			"status_bar_visible": true,
 			"window_id": 8,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"con",
+						"console"
+					],
+					[
+						"type",
+						"typeof"
+					],
+					[
+						"fi",
+						"filterValue"
+					],
+					[
+						"we",
+						"week"
+					]
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "Packages/RspecBuild/RSpec.sublime-build",
+			"command_palette":
+			{
+				"height": 357.0,
+				"selected_items":
+				[
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"lint",
+						"JSLint: Show JSLint Result"
+					],
+					[
+						"indent",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"Snippet: to",
+						"Snippet: expect to equal"
+					],
+					[
+						"spec",
+						"Jasmine: Switch between code and spec"
+					],
+					[
+						"jasmi",
+						"Jasmine: Switch between code and spec"
+					],
+					[
+						"jasmin",
+						"Set Syntax: Jasmine"
+					],
+					[
+						"show",
+						"Snippet: spy on and throw"
+					],
+					[
+						"jas",
+						"Jasmine: Switch between code and spec"
+					],
+					[
+						"jasm",
+						"Jasmine: Switch between code and spec"
+					],
+					[
+						"packa",
+						"Package Control: Install Package"
+					],
+					[
+						"packagein",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 480.0
+			},
+			"console":
+			{
+				"height": 146.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/phillip/Projekte/torial/git/app/assets/javascripts/TODO",
+				"/Users/phillip/Projekte/torial/git/app/assets/javascripts/project_contents_filter.js",
+				"/Users/phillip/Projekte/torial/git/spec/javascripts/project_contents_filter_spec.js",
+				"/Users/phillip/Library/Application Support/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+				"/Users/phillip/Projekte/torial/git/spec/javascripts/spec.js.coffee",
+				"/Users/phillip/Projekte/torial/git/spec/requests/content/create_spec.rb",
+				"/Users/phillip/Projekte/torial/git/spec/javascripts/support/jasmine.yml",
+				"/Users/phillip/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/Users/phillip/Projekte/torial/git/vendor/test",
+				"/Users/phillip/Projekte/torial/git/spec/routing/routing_spec.rb",
+				"/Users/phillip/Projekte/torial/git/app/models/user.rb",
+				"/Users/phillip/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/Users/phillip/Projekte/torial/git/public/404.html",
+				"/Users/phillip/Projekte/torial/git/app/views/contents/edit.html.haml",
+				"/Users/phillip/Projekte/torial/git/app/views/projects/show.html.haml",
+				"/Users/phillip/Projekte/torial/git/app/views/faqs/show.html.haml",
+				"/Users/phillip/Projekte/torial/git/config/deploy/staging.rb",
+				"/Users/phillip/Projekte/torial/git/spec/models/collaboration_spec.rb",
+				"/Users/phillip/Projekte/torial/git/app/assets/javascripts/tags.js",
+				"/Users/phillip/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+				"/Users/phillip/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+				"/Users/phillip/Projekte/torial/git/app/views/layouts/application.html.haml",
+				"/Users/phillip/Projekte/torial/git/app/controllers/collaborations_controller.rb"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"tab",
+					"caret_style",
+					"guide",
+					"self",
+					"page",
+					"command",
+					"line",
+					"authorize"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/Users/phillip/Projekte/torial/git"
+				}
+			],
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 36.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 112.0
+			},
+			"output.jslint_result_view":
+			{
+				"height": 30.0
+			},
+			"position": "4 0 1436 878 0 0 1440 878 ",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"procofi",
+						"app/assets/javascripts/project_contents_filter.js"
+					],
+					[
+						"filterspec",
+						"spec/javascripts/project_contents_filter_spec.js"
+					],
+					[
+						"specjs",
+						"spec/javascripts/spec.js.coffee"
+					],
+					[
+						"filter",
+						"app/assets/javascripts/project_contents_filter.js"
+					],
+					[
+						"jasmine",
+						"spec/javascripts/support/jasmine.yml"
+					],
+					[
+						"createsp",
+						"spec/requests/content/create_spec.rb"
+					],
+					[
+						"cresp",
+						"spec/requests/content/create_spec.rb"
+					],
+					[
+						"",
+						"/Users/phillip/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+					],
+					[
+						"user",
+						"app/models/user.rb"
+					],
+					[
+						"rs",
+						"spec/routing/routing_spec.rb"
+					],
+					[
+						"haml",
+						"app/views/contents/edit.html.haml"
+					],
+					[
+						"html",
+						"public/404.html"
+					],
+					[
+						"show",
+						"app/views/projects/show.html.haml"
+					],
+					[
+						"userb",
+						"app/models/user.rb"
+					],
+					[
+						"userrb",
+						"app/models/user.rb"
+					],
+					[
+						".js",
+						"app/assets/javascripts/tags.js"
+					],
+					[
+						"cs",
+						"spec/models/collaboration_spec.rb"
+					],
+					[
+						"creats",
+						"spec/requests/content/create_spec.rb"
+					],
+					[
+						"apphaml",
+						"app/views/layouts/application.html.haml"
+					],
+					[
+						"creasp",
+						"spec/requests/content/create_spec.rb"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 275.0,
+			"status_bar_visible": true,
+			"window_id": 9,
 			"workspace_name": ""
 		}
 	],
