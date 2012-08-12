@@ -247,7 +247,10 @@ class GitWindowCommand(GitCommand, sublime_plugin.WindowCommand):
         if file_name:
             return os.path.dirname(file_name)
         else:
-            return self.window.folders()[0]
+            try: # handle case with no open folder
+                return self.window.folders()[0]
+            except IndexError:
+                return ''
 
     def get_window(self):
         return self.window
@@ -866,6 +869,36 @@ class GitNewBranchCommand(GitWindowCommand):
             self.panel("No branch name provided")
             return
         self.run_command(['git', 'checkout', '-b', branchname])
+
+
+class GitNewTagCommand(GitWindowCommand):
+    def run(self):
+        self.get_window().show_input_panel("Tag name", "", self.on_input, None, None)
+
+    def on_input(self, tagname):
+        if not tagname.strip():
+            self.panel("No branch name provided")
+            return
+        self.run_command(['git', 'tag', tagname])
+
+class GitShowTagsCommand(GitWindowCommand):
+    def run(self):
+        self.run_command(['git', 'tag'], self.fetch_tag)
+
+    def fetch_tag(self, result):
+        self.results = result.rstrip().split('\n')
+        self.quick_panel(self.results, self.panel_done)
+
+    def panel_done(self, picked):
+        if 0 > picked < len(self.results):
+            return
+        picked_tag = self.results[picked]
+        picked_tag = picked_tag.strip()
+        self.run_command(['git', 'show', picked_tag])
+
+class GitPushTagsCommand(GitWindowCommand):
+    def run(self):
+        self.run_command(['git', 'push', '--tags'])
 
 
 class GitCheckoutCommand(GitTextCommand):
