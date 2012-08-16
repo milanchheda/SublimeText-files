@@ -173,7 +173,8 @@ class GitCommand(object):
                 do_when(lambda: not self.active_view().is_loading(), lambda: self.active_view().set_viewport_position(position, False))
                 # self.active_view().show(position)
 
-        if self.active_view().settings().get('live_git_annotations'):
+        view = self.active_view()
+        if view and view.settings().get('live_git_annotations'):
             self.view.run_command('git_annotate')
 
         if not result.strip():
@@ -245,7 +246,7 @@ class GitWindowCommand(GitCommand, sublime_plugin.WindowCommand):
     def get_working_dir(self):
         file_name = self._active_file_name()
         if file_name:
-            return os.path.dirname(file_name)
+            return os.path.realpath(os.path.dirname(file_name))
         else:
             try: # handle case with no open folder
                 return self.window.folders()[0]
@@ -270,7 +271,7 @@ class GitTextCommand(GitCommand, sublime_plugin.TextCommand):
         return os.path.basename(self.view.file_name())
 
     def get_working_dir(self):
-        return os.path.dirname(self.view.file_name())
+        return os.path.realpath(os.path.dirname(self.view.file_name()))
 
     def get_window(self):
         # Fun discovery: if you switch tabs while a command is working,
@@ -562,7 +563,7 @@ class GitCommitCommand(GitWindowCommand):
         # Okay, get the template!
         s = sublime.load_settings("Git.sublime-settings")
         if s.get("verbose_commits"):
-            self.run_command(['git', 'diff', '--staged'], self.diff_done)
+            self.run_command(['git', 'diff', '--staged', '--no-color'], self.diff_done)
         else:
             self.run_command(['git', 'status'], self.diff_done)
 
@@ -1132,7 +1133,7 @@ class GitAnnotateCommand(GitTextCommand):
 
     def compare_tmp(self, result, stdout=None):
         all_text = self.view.substr(sublime.Region(0, self.view.size())).encode("utf-8")
-        self.run_command(['diff', '-u', self.tmp.name, '-'], stdin=all_text, no_save=True, show_status=False, callback=self.parse_diff)
+        self.run_command(['diff', '--no-color', '-u', self.tmp.name, '-'], stdin=all_text, no_save=True, show_status=False, callback=self.parse_diff)
 
     # This is where the magic happens. At the moment, only one chunk format is supported. While
     # the unified diff format theoritaclly supports more, I don't think git diff creates them.

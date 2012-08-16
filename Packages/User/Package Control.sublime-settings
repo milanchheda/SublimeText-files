@@ -1,8 +1,8 @@
 {
-	"auto_upgrade_last_run": 1344788034,
+	"auto_upgrade_last_run": 1345101266,
 	"installed_packages":
 	[
-		"BracketHighlighter",
+		"Auto Semi-Colon",
 		"Git",
 		"Haml",
 		"Jasmine",

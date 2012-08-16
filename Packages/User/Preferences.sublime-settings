@@ -1,9 +1,18 @@
-	{
-    "highlight_line": true,
+{
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	"draw_indent_guides": false,
-	"font_size": 15.0,
+	"font_size": 14.0,
+	"highlight_line": true,
+	"overlay_scroll_bars": "enabled",
+	"ignored_packages": [ "Vintage"],
 	"soda_classic_tabs": true,
 	"theme": "Soda Light.sublime-theme",
-	"trim_trailing_white_space_on_save": false
+	"trim_trailing_white_space_on_save": false,
+
+	"hot_exit": false,
+    "remember_open_files": false,
+
+	"tree_animation_enabled": false,
+   	"show_tab_close_buttons": false
+
 }
