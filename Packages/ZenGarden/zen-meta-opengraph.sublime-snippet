@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<meta property="og:title" content="${1}">
+<meta property="og:type" content="${2:website}">
+<meta property="og:url" content="${3}">
+<meta property="og:image" content="${4}">
+]]></content>
+    <tabTrigger>meta:og</tabTrigger>
+    <scope>text.html</scope>
+    <description>Open Graph Meta Tags</description>
+</snippet>

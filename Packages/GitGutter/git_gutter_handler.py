@@ -41,7 +41,7 @@ class GitGutterHandler:
         return self.view.file_name() is not None
 
     def reset(self):
-        if self.on_disk() and self.git_path:
+        if self.on_disk() and self.git_path and self.view.window():
             self.view.window().run_command('git_gutter')
 
     def get_git_path(self):
@@ -141,9 +141,12 @@ class GitGutterHandler:
             self.update_buf_file()
             args = [
                 self.git_binary_path, 'diff', '-U0', '--no-color',
+                self.ignore_whitespace,
+                self.patience_switch,
                 self.git_temp_file.name,
                 self.buf_temp_file.name,
             ]
+            args = list(filter(None, args)) # Remove empty args
             results = self.run_command(args)
             encoding = self._get_view_encoding()
             try:
@@ -153,6 +156,33 @@ class GitGutterHandler:
             return self.process_diff(decoded_results)
         else:
             return ([], [], [])
+
+    def untracked(self):
+        return self.handle_files([])
+
+    def ignored(self):
+        return self.handle_files(['-i'])
+
+    def handle_files(self, additionnal_args):
+        if self.show_untracked and self.on_disk() and self.git_path:
+            args = [
+                self.git_binary_path,
+                '--git-dir=' + self.git_dir,
+                '--work-tree=' + self.git_tree,
+                'ls-files', '--other', '--exclude-standard',
+            ] + additionnal_args + [
+                os.path.join(self.git_tree, self.git_path),
+            ]
+            args = list(filter(None, args))  # Remove empty args
+            results = self.run_command(args)
+            encoding = self._get_view_encoding()
+            try:
+                decoded_results = results.decode(encoding.replace(' ', ''))
+            except UnicodeError:
+                decoded_results = results.decode("utf-8")
+            return (decoded_results != "")
+        else:
+            return False
 
     def run_command(self, args):
         startupinfo = None
@@ -165,7 +195,28 @@ class GitGutterHandler:
 
     def load_settings(self):
         self.settings = sublime.load_settings('GitGutter.sublime-settings')
+        self.user_settings = sublime.load_settings('Preferences.sublime-settings')
+
+        # Git Binary Setting
         self.git_binary_path = 'git'
-        git_binary = self.settings.get('git_binary')
+        git_binary = self.user_settings.get('git_binary') or self.settings.get('git_binary')
         if git_binary:
             self.git_binary_path = git_binary
+
+        # Ignore White Space Setting
+        self.ignore_whitespace = self.settings.get('ignore_whitespace')
+        if self.ignore_whitespace == 'all':
+            self.ignore_whitespace = '-w'
+        elif self.ignore_whitespace == 'eol':
+            self.ignore_whitespace = '--ignore-space-at-eol'
+        else:
+            self.ignore_whitespace = ''
+
+        # Patience Setting
+        self.patience_switch = ''
+        patience = self.settings.get('patience')
+        if patience:
+            self.patience_switch = '--patience'
+
+        #Untracked files
+        self.show_untracked = self.settings.get('show_markers_on_untracked_file')

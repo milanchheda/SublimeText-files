@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/${1:1.9}/jquery.validate.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/${2:1.9}/additional-methods.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/${3:1.9}/localization/messages_${4:es}.js"></script>
+]]></content>
+    <tabTrigger>script:jqueryvalidate</tabTrigger>
+    <scope>text.html</scope>
+    <description>Microsoft CDN jQuery Validate script include (bassistance.de)</description>
+</snippet>

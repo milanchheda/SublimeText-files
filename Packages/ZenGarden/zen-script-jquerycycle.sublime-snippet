@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<script src="//ajax.aspnetcdn.com/ajax/jquery.cycle/${1:2.99}/jquery.cycle.${2:all}.min.js"></script>
+]]></content>
+    <tabTrigger>script:jquerycycle</tabTrigger>
+    <scope>text.html</scope>
+    <description>Microsoft CDN jQuery Cycle script include (malsup.com)</description>
+</snippet>

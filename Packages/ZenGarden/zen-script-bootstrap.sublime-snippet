@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/${1:2.1.0}/js/bootstrap.min.js"></script>
+]]></content>
+    <tabTrigger>script:bootstrap</tabTrigger>
+    <scope>text.html</scope>
+    <description>BootstrapCDN Twitter Bootstrap script include</description>
+</snippet>

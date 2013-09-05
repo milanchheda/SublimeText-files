@@ -1,19 +1,25 @@
 {
-	"auto_upgrade_last_run": 1345101266,
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"Auto Semi-Colon",
+		"ElasticTabstops",
+		"Emmet",
+		"Emmet Css Snippets",
 		"Git",
+		"GitGutter",
 		"Haml",
 		"Jasmine",
+		"JsFormat",
 		"Package Control",
-		"RSpec",
-		"RspecBuild",
+		"RubyTest",
+		"RubyToggleString",
 		"Sass",
+		"SearchInProject",
 		"SendToPasteBin",
 		"sublime-jslint",
 		"SyncedSideBar",
-		"Theme - Soda",
-		"Unicode Character Highlighter"
+		"Unicode Character Highlighter",
+		"ZenGarden"
 	]
 }

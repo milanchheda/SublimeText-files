@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<img src="http://placehold.it/${1:100}x${2:100}" width="${1:100}" height="${2:100}" alt="${3:placeholder}" title="${4:placeholder}">
+]]></content>
+    <tabTrigger>img:placehold</tabTrigger>
+    <scope>text.html</scope>
+    <description>Placeholder image by http://placehold.it/</description>
+</snippet>

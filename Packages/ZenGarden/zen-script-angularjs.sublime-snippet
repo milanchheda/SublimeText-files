@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/${1:1.0.2}/angular.min.js"></script>
+]]></content>
+    <tabTrigger>script:angularjs</tabTrigger>
+    <scope>text.html</scope>
+    <description>Google CDN Angular JS script include</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<meta name="description" content="${1}">
+<meta name="keywords" content="${2}">
+<meta name="robots" content="${3:index, follow}">
+]]></content>
+    <tabTrigger>meta:seo</tabTrigger>
+    <scope>text.html</scope>
+    <description>SEO Meta Tags</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/${1:1.8.23}/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.7/i18n/ui.datepicker-${2:es}.js"></script>
+]]></content>
+    <tabTrigger>script:jqueryui</tabTrigger>
+    <scope>text.html</scope>
+    <description>Google CDN jQuery UI script include</description>
+</snippet>

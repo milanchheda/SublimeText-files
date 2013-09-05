@@ -1,18 +1,40 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
-	"draw_indent_guides": false,
-	"font_size": 14.0,
+	"draw_indent_guides": true,
+	"file_exclude_patterns":
+	[
+		".jhw-cache",
+		".sass-cache",
+		"log"
+	],
+	"font_face": "Monaco",
+	"font_size": 16.0,
 	"highlight_line": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Git",
+		"Unicode Character Highlighter",
+		"sublime-jslint",
+		"Sass",
+		"RubyToggleString",
+		"Vintage",
+		"SendToPasteBin",
+		"Jasmine",
+		"ElasticTabstops",
+		"SyncedSideBar",
+		"RubyTest",
+		"Auto Semi-Colon",
+		"JsFormat",
+		"Haml",
+		"GitGutter",
+		"SearchInProject"
+	],
 	"overlay_scroll_bars": "enabled",
-	"ignored_packages": [ "Vintage"],
+	"remember_open_files": false,
+	"show_tab_close_buttons": false,
 	"soda_classic_tabs": true,
 	"theme": "Soda Light.sublime-theme",
-	"trim_trailing_white_space_on_save": false,
-
-	"hot_exit": false,
-    "remember_open_files": false,
-
 	"tree_animation_enabled": false,
-   	"show_tab_close_buttons": false
-
+	"trim_trailing_white_space_on_save": true
 }

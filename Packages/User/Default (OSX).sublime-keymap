@@ -2,7 +2,8 @@
 	// goto line
 	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	// goto method
-	{ "keys": ["super+shift+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-	{ "keys": ["super+shift+r"], "command": "reveal_in_side_bar"}
+	{ "keys": ["super+shift+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} }
+	// clashes with run single Ruby test.
+	//{ "keys": ["super+shift+r"], "command": "reveal_in_side_bar"}
 ]
 
