@@ -1,0 +1,6 @@
+{
+  "sublimelinter_executable_map": {
+    "ruby": "/Users/bloom34/.rvm/bin/rvm-auto-ruby",
+    "haml": "/Users/bloom34/bin"
+  }
+}
