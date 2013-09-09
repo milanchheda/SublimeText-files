@@ -3,12 +3,15 @@
 	"installed_packages":
 	[
 		"Auto Semi-Colon",
+		"Color Highlighter",
 		"ElasticTabstops",
 		"Emmet",
 		"Emmet Css Snippets",
+		"FindKeyConflicts",
 		"Git",
 		"GitGutter",
 		"Haml",
+		"HTML5",
 		"Jasmine",
 		"JsFormat",
 		"Package Control",
