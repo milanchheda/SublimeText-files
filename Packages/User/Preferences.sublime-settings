@@ -1,4 +1,6 @@
 {
+	"auto_complete_commit_on_tab": true,
+	"caret_style": "solid",
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	"draw_indent_guides": true,
 	"file_exclude_patterns":
@@ -8,9 +10,22 @@
 		"log",
 		".DS_Store"
 	],
-	"folder_exclude_patterns": [".bundle", ".git", ".jhw-cache", ".sass-cache", "coverage", "tmp"],
+	"folder_exclude_patterns":
+	[
+		".bundle",
+		".git",
+		".jhw-cache",
+		".sass-cache",
+		"coverage",
+		"tmp"
+	],
 	"font_face": "Monaco",
+	"font_options":
+	[
+		"no_round"
+	],
 	"font_size": 15.0,
+	"foo": "bar",
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -22,13 +37,22 @@
 		"JsFormat",
 		"SearchInProject"
 	],
+	"indent_to_bracket": true,
 	"overlay_scroll_bars": "disabled",
 	"remember_open_files": false,
 	"reveal-on-activate": false,
+	"rulers":
+	[
+		100
+	],
 	"show_tab_close_buttons": false,
 	"soda_classic_tabs": true,
 	"soda_folder_icons": true,
 	"theme": "Soda Light.sublime-theme",
 	"tree_animation_enabled": false,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": false,
+    // Makes tabs with modified files more visible
+    "highlight_modified_tabs": true,
+    "bold_folder_labels": true
+
 }
