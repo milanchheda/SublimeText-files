@@ -1,4 +1,4 @@
 {
-	"last_test_run": "/Users/bloom34/.rvm/bin/rvm-auto-ruby -S bundle exec rspec spec/features/users/edit_spec.rb",
+	"last_test_run": "rspec spec/models/content/link_spec.rb -l194",
 	"last_test_working_dir": "/Users/bloom34/Projekte/torial/git"
 }
