@@ -18,7 +18,10 @@
 		".jhw-cache",
 		".sass-cache",
 		"coverage",
-		"tmp"
+		"tmp",
+		".svn",
+		".hg",
+		"CVS"
 	],
 	"font_face": "Monaco",
 	"font_options":
