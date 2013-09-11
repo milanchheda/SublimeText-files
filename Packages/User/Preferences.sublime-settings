@@ -21,7 +21,8 @@
 		"tmp",
 		".svn",
 		".hg",
-		"CVS"
+		"CVS",
+		"log"
 	],
 	"font_face": "Monaco",
 	"font_options":
@@ -54,5 +55,6 @@
 	"soda_classic_tabs": true,
 	"theme": "Soda Light.sublime-theme",
 	"tree_animation_enabled": false,
-	"trim_trailing_white_space_on_save": false
+	"trim_trailing_white_space_on_save": false,
+	"translate_tabs_to_spaces": false
 }
